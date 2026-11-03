@@ -59,3 +59,9 @@ Somente dados fictícios; nenhum token ou senha no repositório. Limite autoriza
 O laboratório usa serverless em lugar de um cluster clássico mantido ativo. O custo definitivo depende do registro de cobrança do provedor; o tempo limite da tarefa não é um teto monetário automático. O projeto não cria agentes pagos no DevOps nem configura CD que inicie compute automaticamente.
 
 As referências oficiais e o roteiro completo estão em [docs/operacao.md](docs/operacao.md).
+
+## Entrega na DIO
+
+Projeto submetido em 03/11/2026 ao desafio **Controle e Versionamento de Código no Notebook da Azure**. A plataforma confirmou **PROJETO ENTREGUE**.
+
+![Confirmação da entrega na DIO](docs/dio-projeto-entregue.png)
