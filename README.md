@@ -25,7 +25,17 @@ Os tipos acima de 30 representam 67,01% do total. Valores negativos e nomes vazi
 
 ## Validação e estado de execução
 
-Os três testes Python passaram localmente em 03/11/2026, e a sintaxe dos arquivos Python foi validada. A execução do notebook no Azure e a conexão do Azure DevOps estão em preparação; este registro será atualizado com evidências reais. A versão `.ipynb` inicial não contém resultados de execução.
+Os três testes Python passaram localmente em 03/11/2026, e a sintaxe dos arquivos Python foi validada. A mesma validação passou no [GitHub Actions, execução 41687578380](https://github.com/IgorGomes-ItSolutions/azure-databricks-versionamento-notebooks/actions/runs/41687578380).
+
+O workspace Azure `adb-dio-versionamento-igorg` está ativo em East US, no tipo Premium/Serverless, com a assinatura existente. A organização Azure DevOps e o projeto `DIO-Databricks-Versionamento` foram criados; o repositório foi importado no Azure Repos e a esteira YAML foi cadastrada. A primeira execução no DevOps não encontrou agente compatível disponível (`No agent found in pool Azure Pipelines`). Nenhum resultado de teste executado no agente Azure é alegado.
+
+A importação e a execução do notebook no Azure Databricks aguardam a conclusão manual da autenticação OAuth da ferramenta oficial. O console informa que não suporta controle automatizado de navegador. A versão `.ipynb` inicial não contém resultados de execução; as verificações Spark/SQL presentes no notebook ainda precisam ser executadas no workspace.
+
+### Evidências
+
+![Workspace Azure ativo](docs/azure-workspace-ativo.png)
+![Testes aprovados no GitHub Actions](docs/github-ci-sucesso.png)
+![Esteira Azure DevOps criada, sem agente disponível](docs/devops-sem-agente.png)
 
 ```powershell
 python -m unittest discover -s tests -v
