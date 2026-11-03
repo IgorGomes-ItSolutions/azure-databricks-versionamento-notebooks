@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.databricks/
+*.log
+docs/*pendente.png
+docs/azure-trial-indisponivel.png
