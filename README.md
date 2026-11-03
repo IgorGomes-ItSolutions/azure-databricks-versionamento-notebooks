@@ -29,7 +29,11 @@ Os três testes Python passaram localmente em 03/11/2026, e a sintaxe dos arquiv
 
 O workspace Azure `adb-dio-versionamento-igorg` está ativo em East US, no tipo Premium/Serverless, com a assinatura existente. A organização Azure DevOps e o projeto `DIO-Databricks-Versionamento` foram criados; o repositório foi importado no Azure Repos e a esteira YAML foi cadastrada. A primeira execução no DevOps não encontrou agente compatível disponível (`No agent found in pool Azure Pipelines`). Nenhum resultado de teste executado no agente Azure é alegado.
 
-A importação e a execução do notebook no Azure Databricks aguardam a conclusão manual da autenticação OAuth da ferramenta oficial. O console informa que não suporta controle automatizado de navegador. A versão `.ipynb` inicial não contém resultados de execução; as verificações Spark/SQL presentes no notebook ainda precisam ser executadas no workspace.
+A importação foi realizada pela CLI oficial após autorização OAuth manual. O notebook executou com **SUCCESS** no Azure Databricks em 03/11/2026: 57 segundos de execução e aproximadamente 64 segundos no total, incluindo preparação. As verificações Spark/SQL passaram. O gráfico abaixo foi extraído dessa execução real.
+
+Consulte o [notebook com resultados executados](notebooks/01_documentos_executado.ipynb), os [resultados das células](docs/resultados-celulas.json), os [metadados do run](docs/resultado-azure.json) e o [histórico de execução](docs/execucao-azure.md). A versão importável sem saídas continua disponível para reaproveitamento.
+
+![Gráfico gerado no Azure Databricks](docs/grafico-executado-azure.png)
 
 ### Evidências
 
@@ -50,6 +54,8 @@ O fluxo de versionamento é branch → revisão → testes → merge → artefat
 
 ## Custos e segurança
 
-Somente dados fictícios; nenhum token ou senha no repositório. Limite autorizado para este laboratório: US$ 5 dos créditos existentes, sem migração da assinatura. A tentativa de plano Databricks Trial foi recusada porque a assinatura é Azure Free Trial; essa tentativa não representa um workspace ou cluster em execução.
+Somente dados fictícios; nenhum token ou senha no repositório. Limite autorizado para este laboratório: US$ 5 dos créditos existentes, sem migração da assinatura. A tentativa de plano Databricks Trial foi recusada porque a assinatura é Azure Free Trial; o workspace foi criado com Premium/Serverless na mesma assinatura. A tentativa em modo econômico atingiu o limite de espera. A segunda, em Performance Optimized, foi especificamente autorizada e concluída; não há agendamento recorrente.
+
+O laboratório usa serverless em lugar de um cluster clássico mantido ativo. O custo definitivo depende do registro de cobrança do provedor; o tempo limite da tarefa não é um teto monetário automático. O projeto não cria agentes pagos no DevOps nem configura CD que inicie compute automaticamente.
 
 As referências oficiais e o roteiro completo estão em [docs/operacao.md](docs/operacao.md).

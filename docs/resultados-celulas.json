@@ -1,0 +1,153 @@
+[
+  {
+    "celula": 2,
+    "tipo": "tabela",
+    "colunas": [
+      "id",
+      "documento",
+      "quantidade"
+    ],
+    "dados": [
+      [
+        "1",
+        "intimação",
+        "51"
+      ],
+      [
+        "2",
+        "mandado de prisão",
+        "45"
+      ],
+      [
+        "3",
+        "processo",
+        "20"
+      ],
+      [
+        "4",
+        "inquérito",
+        "34"
+      ],
+      [
+        "5",
+        "relatório",
+        "16"
+      ],
+      [
+        "6",
+        "ofício",
+        "28"
+      ],
+      [
+        "3",
+        "processo",
+        "20"
+      ],
+      [
+        "7",
+        "teste inválido",
+        "-2"
+      ],
+      [
+        "8",
+        "",
+        "10"
+      ]
+    ]
+  },
+  {
+    "celula": 4,
+    "tipo": "stdout",
+    "dados": "{'brutos': 9, 'válidos': 6, 'rejeitados': 2, 'duplicatas': 1}\n"
+  },
+  {
+    "celula": 4,
+    "tipo": "tabela",
+    "colunas": [
+      "id",
+      "documento",
+      "quantidade"
+    ],
+    "dados": [
+      [
+        7,
+        "teste inválido",
+        -2
+      ],
+      [
+        8,
+        "",
+        10
+      ]
+    ]
+  },
+  {
+    "celula": 5,
+    "tipo": "tabela",
+    "colunas": [
+      "id",
+      "documento",
+      "quantidade"
+    ],
+    "dados": [
+      [
+        1,
+        "intimação",
+        51
+      ],
+      [
+        2,
+        "mandado de prisão",
+        45
+      ],
+      [
+        4,
+        "inquérito",
+        34
+      ]
+    ]
+  },
+  {
+    "celula": 6,
+    "tipo": "tabela",
+    "colunas": [
+      "documento",
+      "quantidade"
+    ],
+    "dados": [
+      [
+        "intimação",
+        51
+      ],
+      [
+        "mandado de prisão",
+        45
+      ],
+      [
+        "inquérito",
+        34
+      ]
+    ]
+  },
+  {
+    "celula": 7,
+    "tipo": "tabela",
+    "colunas": [
+      "tipos_documentos",
+      "total_documentos",
+      "media_por_tipo"
+    ],
+    "dados": [
+      [
+        6,
+        194,
+        32.33
+      ]
+    ]
+  },
+  {
+    "celula": 8,
+    "tipo": "stdout",
+    "dados": "Verificações concluídas: 6 tipos, total 194; SQL e PySpark equivalentes.\n"
+  }
+]

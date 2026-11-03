@@ -1,0 +1,15 @@
+{
+  "performance": "PERFORMANCE_OPTIMIZED",
+  "run_id": 323963490686739,
+  "execution_duration_ms": 57000,
+  "state": {
+    "life_cycle_state": "TERMINATED",
+    "result_state": "SUCCESS",
+    "state_message": "",
+    "user_cancelled_or_timedout": false
+  },
+  "run_url": "https://adb-7405610806756465.5.azuredatabricks.net/?o=7405610806756465#job/836810480212073/run/323963490686739",
+  "task_run_id": 913857914583256,
+  "duration_ms": 63888,
+  "setup_duration_ms": 6000
+}
